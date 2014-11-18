@@ -16,7 +16,7 @@ def home(request):
 	# 	print new_join, created
 	# 	print new_join.timestamp
 
-# This is using Model Forms
+# This is using Model Forms  
 	form = JoinForm(request.POST or None)
 	if form.is_valid():
 		new_join = form.save(commit=False)
